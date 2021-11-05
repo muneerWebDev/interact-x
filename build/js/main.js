@@ -146,6 +146,12 @@ $.fn.isInViewport = function (bottomOffset) {
 
 };
 
+/***************************/
+// add class to body when the webpage is initially loaded
+function addClassWhenSiteIsLoaded() {
+    $("body").addClass('loaded');
+}
+
 
 (function ($) {
     "use strict";
@@ -157,6 +163,14 @@ $.fn.isInViewport = function (bottomOffset) {
 
     $(window).resize(function () {
         dynamicCssVariables();
+    });
+
+    $(window).on("load", function () {
+        addClassWhenSiteIsLoaded();
+
+        setTimeout(() => {
+            addClassWhenSiteIsLoaded();
+        }, 1500);
     });
 
 }($));

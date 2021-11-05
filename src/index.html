@@ -9,8 +9,9 @@
             <div uk-grid class="uk-flex-middle uk-padding-large  uk-padding-remove-horizontal  uk-padding-remove-top">
                 <div class="uk-width-1-2@m">
                     <div class="text uk-padding uk-padding-remove-horizontal">
-                        <p class="stencil">Amongst the top level agencies in Whales, UK</p>
-                        <h1>Emotion Driven
+                        <p class="stencil" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300;">Amongst the
+                            top level agencies in Whales, UK</p>
+                        <h1 uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600;">Emotion Driven
                             Design.</h1>
 
                         <a href="#bannerBelow" uk-scroll="offset: 150" class="scrollto uk-text-small"><span
@@ -19,7 +20,8 @@
                     </div>
                 </div>
                 <div class="uk-width-1-2@m">
-                    <div class="image uk-text-right@m">
+                    <div class="image uk-text-right@m"
+                        uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 800;">
                         <img data-src="img/landing.jpg" width="511" height="603" alt="Interact X" uk-img
                             class="uk-width-1-1 uk-width-auto@s">
                     </div>
@@ -36,9 +38,10 @@
 
         <div uk-grid>
             <div class="uk-width-1-1@m uk-text-center">
-                <div class="uk-padding-large@m uk-padding-remove-top uk-position-relative uk-margin-bottom">
-                    <img data-src="img/design-thinking.jpg" alt="Interact X" uk-img
-                        class="uk-width-1-1 uk-width-auto@s">
+                <div class="uk-padding-large uk-padding-remove-top uk-position-relative uk-margin-bottom"
+                    uk-parallax="opacity: .5,1,1; viewport: 0.6;">
+                    <img data-src="img/design-thinking.jpg" alt="Interact X" uk-img class="uk-width-1-1 uk-width-auto@s"
+                        uk-parallax="x: 100,0; viewport: .4;">
                     <span uk-icon="icon: ring-text"></span>
                 </div>
 
@@ -46,14 +49,15 @@
 
             <div class="uk-width-1-2@m">
                 <div class="text uk-padding@m uk-padding-remove-horizontal uk-padding-remove-top">
-                    <p class="stencil">Our Expertise & Services</p>
-                    <h2>Crafting the <br>
+                    <p class="stencil" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 300;">Our Expertise &
+                        Services</p>
+                    <h2 uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600;">Crafting the <br>
                         Visual Journey.</h2>
                 </div>
             </div>
             <div class="uk-width-1-2@m">
                 <ul uk-accordion>
-                    <li class="uk-open">
+                    <li class="uk-open" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 800;">
                         <a class="uk-accordion-title uk-text-large" href="#">User Experience Design</a>
                         <div class="uk-accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -61,7 +65,7 @@
                                 ut labore et dolore magna aliqua.</p>
                         </div>
                     </li>
-                    <li>
+                    <li uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1000;">
                         <a class="uk-accordion-title uk-text-large" href="#">Creative Transformation</a>
                         <div class="uk-accordion-content">
                             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -69,7 +73,7 @@
                                 commodo consequat. Duis aute irure dolor reprehenderit.</p>
                         </div>
                     </li>
-                    <li>
+                    <li uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1200;">
                         <a class="uk-accordion-title uk-text-large" href="#">Research & Strategy</a>
                         <div class="uk-accordion-content">
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -77,7 +81,7 @@
                                 nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
                         </div>
                     </li>
-                    <li>
+                    <li uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1400;">
                         <a class="uk-accordion-title uk-text-large" href="#">Concepts & Branding</a>
                         <div class="uk-accordion-content">
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -85,7 +89,7 @@
                                 nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
                         </div>
                     </li>
-                    <li>
+                    <li uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1600;">
                         <a class="uk-accordion-title uk-text-large" href="#">Product Development</a>
                         <div class="uk-accordion-content">
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -93,7 +97,7 @@
                                 nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
                         </div>
                     </li>
-                    <li>
+                    <li uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1800;">
                         <a class="uk-accordion-title uk-text-large" href="#">Digital Marketing</a>
                         <div class="uk-accordion-content">
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -113,7 +117,7 @@
 
         <div uk-grid class="uk-padding uk-padding-remove-top uk-padding-remove-horizontal">
 
-            <div class="uk-width-1-2@m">
+            <div class="uk-width-1-2@m" uk-scrollspy="cls: uk-animation-slide-bottom-right; delay: 300;">
                 <div class="uk-padding-large uk-padding-remove-top uk-padding-remove-horizontal uk-position-relative">
                     <img data-src="img/touch_gesture_animations.jpg" alt="Interact X" uk-img
                         class="uk-width-1-1 uk-width-auto@s">
@@ -121,15 +125,17 @@
             </div>
             <div class="uk-width-1-2@m">
 
-                <p class="stencil">Binding Technology & Art</p>
-                <h2>From Sketches <br>
+                <p class="stencil" uk-scrollspy="cls: uk-animation-slide-bottom-right; delay: 600;">Binding Technology &
+                    Art</p>
+                <h2 uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900;">From Sketches <br>
                     to Reality.</h2>
-                <p>
+                <p uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1100;">
                     We work with global enterprises and startups alike,engineering the most effective user-centric
                     product experiences and elegant designs. Enable your user experience across all platforms and brand
                     touch points.
                 </p>
-                <a href="" class="uk-button uk-button-primary">Explore more <span
+                <a href="" class="uk-button uk-button-primary"
+                    uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1300;">Explore more <span
                         uk-icon="icon: chevron-right"></span></a>
             </div>
         </div>
@@ -143,7 +149,7 @@
 
             <div uk-grid class="uk-flex-middle uk-padding  uk-padding-remove-horizontal  uk-padding-remove-top">
                 <div class="uk-width-1-1">
-                    <div class="image uk-text-center@m">
+                    <div class="image uk-text-center" uk-parallax="opacity: 0, 1, 1; y: -100,0; viewport: .5;">
                         <img data-src="img/concepts-of-life.jpg" width="1263" height="746" alt="Interact X" uk-img
                             class="uk-width-1-1 uk-width-auto@s">
 
@@ -159,8 +165,9 @@
                     </div>
 
                     <div class="text">
-                        <h2 class=" uk-text-center">Bringing Concepts to Life.</h2>
-                        <p>
+                        <h2 class=" uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600;">
+                            Bringing Concepts to Life.</h2>
+                        <p uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900;">
                             We create seamliness experiences by collabrating with you and your team through the design
                             process. By ensuring that all our cool stakeholders remain aligned and hypothesis are tested
                             ,we
@@ -173,14 +180,18 @@
                     </div>
 
                     <div uk-grid class="uk-margin-large">
-                        <div class="uk-width-1-4@l uk-width-1-2"><img data-src="img/GIFs/Empathize.gif" width=""
-                                height="" alt="" uk-img></div>
-                        <div class="uk-width-1-4@l uk-width-1-2"><img data-src="img/GIFs/Define.gif" width=""
-                                height="" alt="" uk-img></div>
-                        <div class="uk-width-1-4@l uk-width-1-2"><img data-src="img/GIFs/Ideate.gif" width=""
-                                height="" alt="" uk-img></div>
-                        <div class="uk-width-1-4@l uk-width-1-2"><img data-src="img/GIFs/Design.gif" width=""
-                                height="" alt="" uk-img></div>
+                        <div class="uk-width-1-4@l uk-width-1-2"
+                            uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1000;"><img
+                                data-src="img/GIFs/Empathize.gif" width="" height="" alt="" uk-img></div>
+                        <div class="uk-width-1-4@l uk-width-1-2"
+                            uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1300;"><img
+                                data-src="img/GIFs/Define.gif" width="" height="" alt="" uk-img></div>
+                        <div class="uk-width-1-4@l uk-width-1-2"
+                            uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1600;"><img
+                                data-src="img/GIFs/Ideate.gif" width="" height="" alt="" uk-img></div>
+                        <div class="uk-width-1-4@l uk-width-1-2"
+                            uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1900;"><img
+                                data-src="img/GIFs/Design.gif" width="" height="" alt="" uk-img></div>
                     </div>
 
                 </div>
@@ -195,9 +206,11 @@
             <div class="uk-width-1-1">
 
                 <div class="text uk-padding uk-padding-remove-horizontal uk-padding-remove-top">
-                    <p class="stencil">What we are amazing at</p>
-                    <h2>Digital Innovation Concepts</h2>
-                    <p>
+                    <p class="stencil" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300;">What we are
+                        amazing at</p>
+                    <h2 uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600;">Digital Innovation Concepts
+                    </h2>
+                    <p uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900;">
                         We are a full-service digital agency that builds immersive user experience. Our team creates an
                         exceptional visualization and new thought-out functionality. We believe, our clients deserve to
                         be remarkable in their busines The studio develops the products and people appreciate all around
@@ -208,15 +221,22 @@
             </div>
         </div>
     </div>
-    
+
     <div class="scrolling-wrapper uk-padding-large uk-padding-remove-horizontal">
-        <div class="card"><img data-src="img/slider/slider-1.jpg" width="" height="" alt="" uk-img>
+        <div class="card uk-padding uk-padding-remove-verical" ><img data-src="img/slider/slider-1.jpg" width="" height="" alt="" uk-img
+                uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card"><img data-src="img/slider/slider-2.jpg" width="" height="" alt="" uk-img>
+        <div class="card uk-padding uk-padding-remove-verical" ><img data-src="img/slider/slider-2.jpg" width="" height="" alt="" uk-img
+                uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card"><img data-src="img/slider/slider-3.jpg" width="" height="" alt="" uk-img>
+        <div class="card uk-padding uk-padding-remove-verical" ><img data-src="img/slider/slider-3.jpg" width="" height="" alt="" uk-img
+                uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card"><img data-src="img/slider/slider-4.jpg" width="" height="" alt="" uk-img>
+        <div class="card uk-padding uk-padding-remove-verical" ><img data-src="img/slider/slider-4.jpg" width="" height="" alt="" uk-img
+                uk-parallax=" x: -180,0; viewport: 1;">
+        </div>
+        <div class="card uk-padding uk-padding-remove-verical" ><img data-src="img/slider/slider-3.jpg" width="" height="" alt="" uk-img
+                uk-parallax=" x: -180,0; viewport: 1;">
         </div>
     </div>
 </section>

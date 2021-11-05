@@ -11918,6 +11918,30 @@ html.uk-offcanvas-page {
 body {
   font-size: 18px;
   font-size: 1.125rem;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body:not(.loaded) {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#pageloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 1;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+.loaded #pageloader {
+  opacity: 0;
+  pointer-events: none;
 }
 p {
   font-weight: 300;
@@ -11954,6 +11978,9 @@ p {
   font-size: 1.25rem;
   color: #835DEE;
   font-weight: 500;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 .stencil:before {
   content: "";
@@ -11961,7 +11988,7 @@ p {
   height: 2px;
   background: #835DEE;
   display: inline-block;
-  margin: 5px 18px 5px 5px;
+  margin: 15px 18px 5px 5px;
 }
 .on-darkSec .stencil {
   color: #FDE5D0;
@@ -12092,7 +12119,6 @@ p + .uk-button-primary {
 #siteNavbar ul a:after {
   content: "";
   position: absolute;
-  bottom: 0;
   left: 0;
   height: 2px;
   width: 0%;
@@ -12101,6 +12127,7 @@ p + .uk-button-primary {
   -o-transition: width 0.3s, opacity 0.2s;
   transition: width 0.3s, opacity 0.2s;
   background: #000;
+  bottom: 0.15em;
 }
 #siteNavbar ul a:hover:after, #siteNavbar ul a.active:after {
   width: 100%;
@@ -12169,6 +12196,10 @@ p + .uk-button-primary {
 }
 .scrolling-wrapper .card {
   display: inline-block;
+}
+.scrolling-wrapper .card img {
+  max-width: none !important;
+  max-width: initial !important;
 }
 .scrolling-wrapper::-webkit-scrollbar {
   display: none;
