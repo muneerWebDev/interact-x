@@ -1,0 +1,126 @@
+// custom scrollbar
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $color-secondary;
+    .on-darkSec:not(.uk-offcanvas-page) & {
+        background: $color-primary;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: $blue;
+    border-radius: 10px;
+    .on-darkSec:not(.uk-offcanvas-page) & {
+        background: darken($color: $color-beige, $amount: 10%);
+    }
+}
+
+html {
+    background-image: url(../img/grains.png);
+    letter-spacing: 1px;
+    transition: 0.3s;
+    &.uk-light {
+        background-color: $color-primary;
+    }
+
+    &.uk-offcanvas-page {
+        overflow: hidden;
+    }
+}
+
+body {
+    font-size: 1.125rem; //18px
+}
+
+p {
+    font-weight: 300;
+}
+
+.uk-text-small {
+    font-size: 1.125rem; //18px
+}
+
+.uk-text-default {
+    font-size: 1.25rem; //20px
+}
+
+.uk-text-large {
+    font-size: 1.875rem; //30px
+}
+
+.uk-text-500{
+    font-weight: 500;
+}
+
+
+.uk-light .siteHeader .uk-logo {
+    filter: brightness(0) invert(1);
+}
+
+.uk-button {
+    text-transform: none;
+    padding: 10px 55px;
+
+    .uk-light &{
+        svg path{
+            fill: $color-primary;
+        }
+    }
+}
+
+.stencil {
+    font-size: 1.25rem; //20px
+    color: $blue;
+    font-weight: 500;
+    @extend .uk-margin-bottom;
+    &::before {
+        content: "";
+        width: 50px;
+        height: 2px;
+        background: $blue;
+        display: inline-block;
+        margin: 5px 18px 5px 5px;
+    }
+
+    .on-darkSec & {
+        color: $color-beige;
+
+        &::before {
+            background: $color-beige;
+        }
+    }
+
+    #siteNavbar & {
+        color: $blue;
+        &::before {
+            background: $blue;
+        }
+    }
+}
+
+.spin-animation{
+    animation: spin 14s linear infinite;
+}
+
+[uk-icon="icon: ring-text"] {
+    animation: spin 14s linear infinite;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+ul.uk-accordion li {
+    margin-bottom: 20px;
+    width: auto;
+    a {
+        display: inline-block;
+    }
+}
+
+p + .uk-button-primary{
+    margin-top: 20px;
+}

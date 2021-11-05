@@ -1,0 +1,180 @@
+$mouseCursorSize: 1.5rem;
+.mouseCursor {
+    position: fixed;
+    width: $mouseCursorSize;
+    height: $mouseCursorSize;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    top: ($mouseCursorSize/2) * -1;
+    left: ($mouseCursorSize/2) * -1;
+    transition: opacity 0.3s, color 0.4s, width 0.3s, height 0.3s, border 0.3s, transform 0.1s;
+    z-index: 2;
+    background: transparent;
+    border: 2px solid $color-primary;
+    z-index: 99999;
+
+    &:not(.special) {
+        .on-darkSec & {
+            border-color: $color-secondary;
+        }
+    }
+
+    &.hidden {
+        opacity: 0;
+    }
+}
+
+.siteHeader {
+    .uk-offcanvas-bar {
+        *:not(.stencil) {
+            color: $color-primary;
+        }
+    }
+    background-color: $color-secondary;
+    background-image: url(../img/grains.png);
+
+    .on-darkSec & {
+        background-color: $color-primary;
+
+        .uk-navbar-toggle {
+            color: $color-secondary;
+        }
+    }
+
+    .uk-navbar-nav > li > a,
+    .uk-navbar-item,
+    .uk-navbar-toggle {
+        transition: 0.3s;
+    }
+    &.uk-sticky-below {
+        .uk-navbar-nav > li > a,
+        .uk-navbar-item,
+        .uk-navbar-toggle {
+            min-height: 90px;
+        }
+    }
+}
+
+#siteNavbar {
+    .inner-wrapper {
+        display: inline-block;
+        text-align: left;
+        min-width: 56%;
+        max-width: 80%;
+    }
+    .close-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .uk-offcanvas-close {
+            position: inherit;
+            @extend .uk-margin-bottom;
+            svg {
+                width: 1rem;
+            }
+        }
+    }
+
+    ul {
+        padding-left: 0;
+        list-style: none;
+        a {
+            display: inline-block;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 2px;
+                width: 0%;
+                opacity: 0;
+                transition: width 0.3s, opacity 0.2s;
+                background: $color-primary;
+            }
+            &:hover:after,
+            &.active:after {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+        li + li {
+            margin-top: 50px;
+        }
+
+        &.social {
+            li {
+                margin: 10px 0 20px;
+            }
+        }
+    }
+}
+
+
+
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    li {
+        width: 100%;
+
+        @media #{$medium-and-up} {
+            width: 50%;
+        }
+    }
+}
+
+.siteFooter {
+    background-color: $color-secondary;
+    background-image: url(../img/grains.png);
+
+    * {
+        color: $color-primary !important;
+    }
+
+    .social {
+        li {
+            margin: 5px 0;
+        }
+    }
+}
+
+.banner {
+    a.scrollto {
+        position: absolute;
+        bottom: 0;
+        transform: rotate(-90deg) translateY(-100%);
+        left: 5%;
+    }
+
+    a.scrollto .uk-icon svg {
+        width: 56px;
+    }
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+
+    .card {
+        display: inline-block;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
