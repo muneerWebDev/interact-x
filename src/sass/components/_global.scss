@@ -32,7 +32,7 @@ $mouseCursorSize: 1.5rem;
         }
     }
     background-color: $color-secondary;
-    background-image: url(../img/grains.png);
+    // background-image: url(../img/grains.png);
 
     .on-darkSec & {
         background-color: $color-primary;
@@ -62,6 +62,18 @@ $mouseCursorSize: 1.5rem;
         text-align: left;
         min-width: 56%;
         max-width: 80%;
+
+        @media #{$small-and-down} {
+            max-width: initial;
+
+            .uk-margin-bottom {
+                margin-bottom: 20px !important;
+            }
+
+            ul + .stencil {
+                margin: 0 !important;
+            }
+        }
     }
     .close-wrap {
         display: flex;
@@ -106,6 +118,9 @@ $mouseCursorSize: 1.5rem;
         }
         li + li {
             margin-top: 50px;
+            @media #{$small-and-down} {
+                margin-top: 30px;
+            }
         }
 
         &.social {
@@ -120,18 +135,15 @@ $mouseCursorSize: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    padding: 0;
     li {
-        width: 100%;
-
-        @media #{$medium-and-up} {
-            width: 50%;
-        }
+        width: 50%;
     }
 }
 
 .siteFooter {
     background-color: $color-secondary;
-    background-image: url(../img/grains.png);
+    // background-image: url(../img/grains.png);
 
     * {
         color: $color-primary !important;
@@ -140,6 +152,33 @@ $mouseCursorSize: 1.5rem;
     .social {
         li {
             margin: 5px 0;
+
+            span {
+                display: none;
+            }
+        }
+        @media #{$small-and-down} {
+            margin-top: 20px;
+            li {
+                width: auto;
+                margin: 5px 10px 0 0;
+                a {
+                    font-size: 0;
+                    span {
+                        font-size: 16px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$small-and-down} {
+        .uk-logo {
+            width: 70.5px;
+            margin-left: -10px;
+            margin-bottom: 25px;
+            display: inline-block;
         }
     }
 }
@@ -147,13 +186,22 @@ $mouseCursorSize: 1.5rem;
 .banner {
     a.scrollto {
         position: absolute;
-        bottom: 0;
+        bottom: 70px;
+        -webkit-transform: rotate(-90deg) translateY(-100%);
+        -ms-transform: rotate(-90deg) translateY(-100%);
         transform: rotate(-90deg) translateY(-100%);
-        left: 5%;
-    }
-
-    a.scrollto .uk-icon svg {
-        width: 56px;
+        left: calc(-1 * var(--ukContainerOffset));
+        margin-left: 10%;
+        span {
+            transform: rotate(90deg) translateY(14px) translateX(24px);
+            transition: 0.3s;
+            transform-origin: top;
+        }
+        &:hover {
+            span {
+                transform: rotate(90deg) translateY(14px) translateX(24px) scaleY(1.25);
+            }
+        }
     }
 }
 
@@ -170,7 +218,7 @@ $mouseCursorSize: 1.5rem;
 
     .card {
         display: inline-block;
-        img{
+        img {
             max-width: initial !important;
         }
     }
