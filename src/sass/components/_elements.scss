@@ -68,8 +68,37 @@ section {
     }
 }
 
+ .uk-button-secondary{
+    background: $color-secondary;
+    border-color: $color-primary;
+    color: $color-primary;
+
+    &:hover{
+        color: $color-primary;
+    }
+
+    svg path{
+        fill: $color-primary;
+    }
+    .uk-light &{
+        background: $color-primary;
+        border-color: $color-secondary;
+        color: $color-secondary;
+        &:not(:hover){
+            svg path{
+                fill: $color-secondary !important;
+            }
+        }
+    }
+}
+
 p {
     font-weight: 300;
+
+        &:not(.stencil) + p{
+            margin-top: 30px;
+        }
+    
 
     @media #{$small-and-down} {
         font-size: 1.4rem;
@@ -111,19 +140,25 @@ p {
     }
 }
 
+.uk-light .uk-dotnav > *:not(.uk-active) > *{
+    background: $color-primary-light !important;
+}
+
 .stencil {
     font-size: 1.25rem; //20px
     color: $blue;
     font-weight: 500;
     display: inline-flex;
-    @extend .uk-margin-bottom;
-    &::before {
-        content: "";
-        width: 50px;
-        height: 2px;
-        background: $blue;
-        display: inline-block;
-        margin: 15px 18px 5px 5px;
+    &:not(.differ) {
+        @extend .uk-margin-bottom;
+        &::before {
+            content: "";
+            width: 50px;
+            height: 2px;
+            background: $blue;
+            display: inline-block;
+            margin: 15px 18px 5px 5px;
+        }
     }
 
     @media #{$small-and-down} {
@@ -198,3 +233,4 @@ p + .uk-button-primary {
 .uk-open > .uk-accordion-title:before {
     transform: rotate(180deg);
 }
+

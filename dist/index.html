@@ -48,11 +48,6 @@
 
                     <ul class="nav">
                         <li class="nav-item">
-                            <a href="index.html"  class="uk-heading-small">
-                                Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a href="about-us.html"  class="uk-heading-small">
                                 About Us
                             </a>
@@ -271,25 +266,25 @@
                         </p>
                     </div>
 
-                    <div uk-grid class="uk-margin-large uk-text-large uk-text-center">
+                    <div uk-grid class="uk-margin-large uk-text-large uk-text-center uk-grid-column-medium">
 
                         <div class="uk-width-1-4@l uk-width-1-2" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1000;">
                             <img data-src="img/GIFs/Empathize.gif" width="296" height="296" alt="Empathize" uk-img>
-                            <p class="uk-margin">Empathize</p>
+                            <p>Empathize</p>
                         </div>
                         <div class="uk-width-1-4@l uk-width-1-2" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1300;">
                             <img
                                 data-src="img/GIFs/Define.gif" width="296" height="296" alt="Define" uk-img>
-                                <p class="uk-margin">Define</p>
+                                <p>Define</p>
                             </div>
                         <div class="uk-width-1-4@l uk-width-1-2" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1600;"><img
                                 data-src="img/GIFs/Ideate.gif" width="296" height="296" alt="Ideate" uk-img>
-                                <p class="uk-margin">Ideate</p>
+                                <p>Ideate</p>
                             </div>
                         <div class="uk-width-1-4@l uk-width-1-2"
                             uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 1900;">
                             <img data-src="img/GIFs/Design.gif" width="296" height="296" alt="Design" uk-img>
-                            <p class="uk-margin">Design</p>
+                            <p>Design</p>
                         </div>
                     </div>
 
@@ -322,19 +317,19 @@
     </div>
 
     <div class="scrolling-wrapper uk-padding-large uk-padding-remove-horizontal">
-        <div class="card uk-padding uk-padding-remove-verical"><img data-src="img/slider/slider-1.jpg" width="296"
+        <div class="card uk-padding-small uk-padding-remove-vertical"><img data-src="img/slider/slider-1.jpg" width="296"
                 height="296" alt="" uk-img uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card uk-padding uk-padding-remove-verical"><img data-src="img/slider/slider-2.jpg" width="296"
+        <div class="card uk-padding-small uk-padding-remove-vertical"><img data-src="img/slider/slider-2.jpg" width="296"
                 height="296" alt="" uk-img uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card uk-padding uk-padding-remove-verical"><img data-src="img/slider/slider-3.jpg" width="296"
+        <div class="card uk-padding-small uk-padding-remove-vertical"><img data-src="img/slider/slider-3.jpg" width="296"
                 height="296" alt="" uk-img uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card uk-padding uk-padding-remove-verical"><img data-src="img/slider/slider-4.jpg" width="296"
+        <div class="card uk-padding-small uk-padding-remove-vertical"><img data-src="img/slider/slider-4.jpg" width="296"
                 height="296" alt="" uk-img uk-parallax=" x: -180,0; viewport: 1;">
         </div>
-        <div class="card uk-padding uk-padding-remove-verical"><img data-src="img/slider/slider-3.jpg" width="296"
+        <div class="card uk-padding-small uk-padding-remove-vertical"><img data-src="img/slider/slider-3.jpg" width="296"
                 height="296" alt="" uk-img uk-parallax=" x: -180,0; viewport: 1;">
         </div>
     </div>
@@ -345,32 +340,41 @@
 <footer class="siteFooter uk-padding-large uk-padding-remove-horizontal mouseSpecial">
    <div class="uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom">
     <div class="uk-container">
-        <div class="uk-grid">
+        <div class="uk-grid  uk-grid-column-medium">
             <div class="uk-width-1-2@s uk-width-1-4@m uk-text-center@s uk-flex-last@s">
-                <a href="index.html" class="uk-logo">
+                <a href="index.html" class="uk-logo" 
+                uk-scrollspy="cls: uk-animation-fade; delay: 300;">
                     <img width="" height="" alt="interactX" uk-img="data-src:img/footer logo.svg" uk-svg>
                 </a>
             </div>
             <div class="uk-width-1-2@s uk-width-3-4@m">
-                <h2>Let’s Talk.</h2>
-                <a href="" class="uk-text-large uk-text-500">hey@interactx.uk</a>
+                <h2 class="uk-logo" 
+                uk-scrollspy="cls: uk-animation-fade; delay: 400;">Let’s Talk.</h2>
+                <a href="" class="uk-text-large uk-text-500" class="uk-logo" 
+                uk-scrollspy="cls: uk-animation-fade; delay: 500;">hey@interactx.uk</a>
             </div>
         </div>
 
-        <div class="uk-grid uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom uk-text-default padding-remove-small">
+        <div class="uk-grid uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom uk-text-default padding-remove-small  uk-grid-column-medium">
             
 
-            <div class="uk-width-1-2@s uk-width-3-4@m">
+            <div class="uk-width-1-2@s uk-width-3-4@m" class="uk-logo" 
+            uk-scrollspy="cls: uk-animation-fade; delay: 600;">
                 Swansea Bay SA2 8PP <br>
                 Wales, United Kingdom
             </div>
             <div class="uk-width-1-2@s uk-width-1-4@m">
                 <ul class="social">
-                    <li><a href=""><span uk-icon="icon: linkedin"></span> Linkedin</a></li>
-                    <li><a href=""><span uk-icon="icon: twitter"></span>Twitter</a></li>
-                    <li><a href=""><span uk-icon="icon: instagram"></span>Instagram</a></li>
-                    <li><a href=""><span uk-icon="icon: dribble"></span>Dribbble</a></li>
-                    <li><a href=""><span uk-icon="icon: behance"></span>Behance</a></li>
+                    <li><a href="" class="uk-logo" 
+                        uk-scrollspy="cls: uk-animation-fade; delay: 700;"><span uk-icon="icon: linkedin"></span> Linkedin</a></li>
+                    <li><a href="" class="uk-logo" 
+                        uk-scrollspy="cls: uk-animation-fade; delay: 800;"><span uk-icon="icon: twitter"></span>Twitter</a></li>
+                    <li><a href="" class="uk-logo" 
+                        uk-scrollspy="cls: uk-animation-fade; delay: 900;"><span uk-icon="icon: instagram"></span>Instagram</a></li>
+                    <li><a href="" class="uk-logo" 
+                        uk-scrollspy="cls: uk-animation-fade; delay: 1000;"><span uk-icon="icon: dribble"></span>Dribbble</a></li>
+                    <li><a href="" class="uk-logo" 
+                        uk-scrollspy="cls: uk-animation-fade; delay: 1100;"><span uk-icon="icon: behance"></span>Behance</a></li>
                 </ul>
             </div>
         </div>

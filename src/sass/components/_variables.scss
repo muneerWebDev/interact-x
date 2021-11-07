@@ -1,24 +1,24 @@
 $color-primary: #000;
+$color-primary-light: #333333;
 $color-secondary: #fff;
 $color-secondary-light: #868686;
-$color-beige: #FDE5D0;
+$color-beige: #fde5d0;
 $color-dark: $color-primary;
 $color-darker: #161616;
 $color-darkest: #000;
-$blue: #835DEE;
-
+$blue: #835dee;
 
 //
 // Colors
 //
 
-$global-color:                                   $color-primary;
-$global-emphasis-color:                          $color-primary;
-$global-muted-color:                             $color-primary;
+$global-color: $color-primary;
+$global-emphasis-color: $color-primary;
+$global-muted-color: $color-primary;
 
-$global-link-color:                              $color-primary;
-$global-link-hover-color:                        darken($color-primary, 10%);
-$global-primary-background:                      $color-primary;
+$global-link-color: $color-primary;
+$global-link-hover-color: darken($color-primary, 10%);
+$global-primary-background: $color-primary;
 
 //
 // Inverse
@@ -32,30 +32,29 @@ $inverse-global-muted-color: rgba($global-inverse-color, 0.6);
 // Backgrounds
 //
 
-$global-background:                              $color-secondary;
+$global-background: $color-secondary;
 
-$global-muted-background:                        $color-secondary-light;
-$global-primary-background:                      $color-primary;
-$global-secondary-background:                    $color-secondary;
+$global-muted-background: $color-secondary-light;
+$global-primary-background: $color-primary;
+$global-secondary-background: $color-secondary;
 
-$global-success-background:                      #32d296;
-$global-warning-background:                      #faa05a;
-$global-danger-background:                       #f0506e;
-
+$global-success-background: #32d296;
+$global-warning-background: #faa05a;
+$global-danger-background: #f0506e;
 
 //
 // Container
 //
 
 $container-max-width: 1275px;
-$global-medium-gutter: 30px;
+$global-medium-gutter: 130px;
 
 //
 // Borders
 //
 
-$global-border-width:                            1px;
-$global-border:                                  $color-secondary-light;
+$global-border-width: 1px;
+$global-border: $color-secondary-light;
 
 $theme-border-radius: 10px;
 
@@ -63,11 +62,10 @@ $theme-border-radius: 10px;
 // Base
 //
 
-$global-font-family: 'Epilogue';
+$global-font-family: "Epilogue";
 $base-body-font-weight: 400;
 $global-body-font-size: 1.25rem; //20px
 $global-line-height: 1.725;
-
 
 // $head-font-family: 'Abhaya Libre';
 // $global-font-size: 1.25rem; //20px
@@ -75,7 +73,6 @@ $base-margin-vertical: 8px;
 $margin-margin: 30px;
 // $font-size-small: 0.875;
 $base-link-hover-text-decoration: none;
-
 
 //
 // Heading
@@ -150,16 +147,16 @@ $navbar-dropdown-nav-item-active-color: $color-primary;
 $navbar-toggle-color: $color-primary;
 $navbar-toggle-hover-color: $color-secondary-light;
 
-$offcanvas-bar-width : 100vw;
-$offcanvas-bar-width-m : 46.4vw;
+$offcanvas-bar-width: 100vw;
+$offcanvas-bar-width-m: 46.4vw;
 $offcanvas-bar-padding-vertical-m: 5vh;
-$offcanvas-bar-padding-horizontal-m:10%;
+$offcanvas-bar-padding-horizontal-m: 10%;
 //
+
 //Animations
 //
 
 $animation-slide-medium-translate: 10px;
-
 
 //
 // form
@@ -167,18 +164,31 @@ $animation-slide-medium-translate: 10px;
 
 $form-background: transparent;
 
-
 //
 // button
 //
 $button-font-size: 1.125rem; //18px
-$button-primary-background:  $color-darkest;
+$button-primary-background: $color-darkest;
 $button-primary-hover-background: $color-darker;
 $button-padding-vertical: 15px;
 $button-padding-horizontal: 54px;
+
+
 
 //
 //accordion
 //
 
 $accordion-item-margin-top: 0;
+
+//
+// dotnav
+//
+
+$dotnav-item-width: 15px;
+$dotnav-item-height: 3px;
+$dotnav-item-border-width: 0px;
+$dotnav-item-border-radius: 0px;
+$dotnav-item-background: lighten($blue, 15%);
+$dotnav-item-active-background: $blue;
+$dotnav-item-hover-background: $blue;
