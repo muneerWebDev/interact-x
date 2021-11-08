@@ -12067,6 +12067,14 @@ p:not(.stencil) + p {
       -ms-transform: translateX(30%) translateY(45%);
           transform: translateX(30%) translateY(45%);
 }
+.spin-lefted .spin-wrap {
+  right: auto;
+  right: initial;
+  left: 0;
+  -webkit-transform: translateX(-30%) translateY(45%);
+      -ms-transform: translateX(-30%) translateY(45%);
+          transform: translateX(-30%) translateY(45%);
+}
 .uk-overflow-visible {
   overflow: visible !important;
 }
@@ -12102,6 +12110,22 @@ p + .uk-button-primary {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+.uk-slider.differ-arrow .arrows-wrap {
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+}
+@media only screen and (max-width: 640px) {
+  .uk-slider.differ-arrow .arrows-wrap {
+    bottom: 0;
+  }
+}
+.uk-slider.differ-arrow .arrows-wrap .uk-slidenav {
+  margin: 5px;
+}
+.uk-slider.differ-arrow .arrows-wrap .uk-slidenav svg + svg {
+  display: none;
 }
 .mouseCursor {
   position: fixed;
@@ -12275,11 +12299,9 @@ p + .uk-button-primary {
   }
 }
 @media only screen and (max-width: 640px) {
-  .siteFooter .uk-logo {
-    width: 70.5px;
-    margin-left: -10px;
-    margin-bottom: 25px;
-    display: inline-block;
+  .siteFooter .uk-logo svg {
+    width: 70px;
+    margin: 0 -10px 15px;
   }
 }
 .banner a.scrollto {
@@ -12334,6 +12356,16 @@ p + .uk-button-primary {
 }
 .scrolling-wrapper::-webkit-scrollbar {
   display: none;
+}
+@media only screen and (max-width: 640px) {
+  .testimonials h2 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  .testimonials .arrows-wrap svg {
+    width: 30px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
