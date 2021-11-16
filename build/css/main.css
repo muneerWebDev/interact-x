@@ -11901,6 +11901,12 @@ iframe.uk-cover {
 .on-darkSec:not(.uk-offcanvas-page) ::-webkit-scrollbar-thumb {
   background: #fbca9f;
 }
+.uk-offcanvas-flip .uk-open > .uk-offcanvas-bar {
+  left: auto;
+  right: 0;
+  -webkit-box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.07843);
+          box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.07843);
+}
 html {
   letter-spacing: 1px;
   -webkit-transition: 0.3s;
@@ -12006,6 +12012,7 @@ p:not(.stencil) + p {
 .uk-button {
   text-transform: none;
   padding: 10px 55px;
+  font-size: 16px;
 }
 .uk-light .uk-button svg path, .uk-section-primary:not(.uk-preserve-color) .uk-button svg path, .uk-section-secondary:not(.uk-preserve-color) .uk-button svg path, .uk-tile-primary:not(.uk-preserve-color) .uk-button svg path, .uk-tile-secondary:not(.uk-preserve-color) .uk-button svg path, .uk-card-primary.uk-card-body .uk-button svg path, .uk-card-primary > :not([class*='uk-card-media']) .uk-button svg path, .uk-card-secondary.uk-card-body .uk-button svg path, .uk-card-secondary > :not([class*='uk-card-media']) .uk-button svg path, .uk-overlay-primary .uk-button svg path, .uk-offcanvas-bar .uk-button svg path {
   fill: #000;
@@ -12071,9 +12078,22 @@ p:not(.stencil) + p {
   right: auto;
   right: initial;
   left: 0;
-  -webkit-transform: translateX(-30%) translateY(45%);
-      -ms-transform: translateX(-30%) translateY(45%);
-          transform: translateX(-30%) translateY(45%);
+  -webkit-transform: translateX(-65%) translateY(20%);
+      -ms-transform: translateX(-65%) translateY(20%);
+          transform: translateX(-65%) translateY(20%);
+}
+@media only screen and (max-width: 959px) {
+  .spin-lefted .spin-wrap {
+    -webkit-transform: translateX(15%) translateY(35%);
+        -ms-transform: translateX(15%) translateY(35%);
+            transform: translateX(15%) translateY(35%);
+  }
+  .spin-wrap svg {
+    -webkit-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+            transform: scale(0.6);
+    max-width: inherit;
+  }
 }
 .uk-overflow-visible {
   overflow: visible !important;
@@ -12099,6 +12119,11 @@ p + .uk-button-primary {
   .uk-text-default {
     font-size: 22.4px;
     font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .uk-margin-remove-top-fromMedium {
+    margin-top: 0 !important;
   }
 }
 .uk-accordion-title:before {
@@ -12159,8 +12184,16 @@ p + .uk-button-primary {
 .mouseCursor.hidden {
   opacity: 0;
 }
+@media only screen and (max-width: 1199px) {
+  .mouseCursor {
+    display: none;
+  }
+}
 .siteHeader {
   background-color: #fff;
+}
+.siteHeader .uk-logo {
+  max-width: 146px;
 }
 .siteHeader .uk-offcanvas-bar *:not(.stencil) {
   color: #000;
@@ -12221,6 +12254,12 @@ p + .uk-button-primary {
 #siteNavbar .close-wrap .uk-offcanvas-close svg {
   width: 16px;
   width: 1rem;
+}
+@media only screen and (max-width: 1199px) {
+  #siteNavbar .close-wrap .uk-offcanvas-close svg {
+    width: 25.6px;
+    width: 1.6rem;
+  }
 }
 #siteNavbar ul {
   padding-left: 0;
@@ -12291,17 +12330,13 @@ p + .uk-button-primary {
     margin: 5px 10px 0 0;
   }
   .siteFooter .social li a {
-    font-size: 0;
+    color: transparent !important;
+    max-width: 25px;
+    display: inline-block;
   }
   .siteFooter .social li a span {
     font-size: 16px;
     display: inline-block;
-  }
-}
-@media only screen and (max-width: 640px) {
-  .siteFooter .uk-logo svg {
-    width: 70px;
-    margin: 0 -10px 15px;
   }
 }
 .banner a.scrollto {

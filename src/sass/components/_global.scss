@@ -23,9 +23,17 @@ $mouseCursorSize: 1.5rem;
     &.hidden {
         opacity: 0;
     }
+
+    @media #{$large-and-down} {
+        display: none;
+    }
 }
 
 .siteHeader {
+
+    .uk-logo{
+        max-width: 146px;
+    }
     .uk-offcanvas-bar {
         *:not(.stencil) {
             color: $color-primary;
@@ -89,6 +97,10 @@ $mouseCursorSize: 1.5rem;
             @extend .uk-margin-bottom;
             svg {
                 width: 1rem;
+
+                @media #{$large-and-down} {
+                    width: 1.6rem;
+                }
             }
         }
     }
@@ -163,7 +175,9 @@ $mouseCursorSize: 1.5rem;
                 width: auto;
                 margin: 5px 10px 0 0;
                 a {
-                    font-size: 0;
+                    color: transparent !important;
+                    max-width: 25px;
+                    display: inline-block;
                     span {
                         font-size: 16px;
                         display: inline-block;
@@ -173,14 +187,14 @@ $mouseCursorSize: 1.5rem;
         }
     }
 
-    @media #{$small-and-down} {
-        .uk-logo {
-            svg {
-                width: 70px;
-                margin: 0 -10px 15px;
-            }
-        }
-    }
+    // @media #{$small-and-down} {
+    //     .uk-logo {
+    //         svg {
+    //             width: 70px;
+    //             margin: 0 -10px 15px;
+    //         }
+    //     }
+    // }
 }
 
 .banner {

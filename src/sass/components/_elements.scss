@@ -19,6 +19,12 @@
     }
 }
 
+.uk-offcanvas-flip .uk-open > .uk-offcanvas-bar {
+    left: auto;
+    right: 0;
+    box-shadow: 0 0 30px 10px #00000014;
+}
+
 html {
     // background-image: url(../img/grains.png);
     letter-spacing: 1px;
@@ -127,7 +133,7 @@ p {
 .uk-button {
     text-transform: none;
     padding: 10px 55px;
-
+    font-size: 16px;
     .uk-light & {
         svg path {
             fill: $color-primary;
@@ -197,7 +203,17 @@ p {
     .spin-lefted & {
         right: initial;
         left: 0;
-        transform: translateX(-30%) translateY(45%);
+        transform: translateX(-65%) translateY(20%);
+    }
+
+    @media #{$medium-and-down} {
+        .spin-lefted & {
+            transform: translateX(15%) translateY(35%);
+        }
+        svg {
+            transform: scale(0.6);
+            max-width: inherit;
+        }
     }
 }
 
@@ -231,6 +247,12 @@ p + .uk-button-primary {
     }
 }
 
+@media #{$medium-and-up} {
+    .uk-margin-remove-top-fromMedium {
+        margin-top: 0 !important;
+    }
+}
+
 .uk-accordion-title:before {
     transition: 0.2s;
 }
@@ -239,18 +261,18 @@ p + .uk-button-primary {
     transform: rotate(180deg);
 }
 
-.uk-slider.differ-arrow{
-    .arrows-wrap{
+.uk-slider.differ-arrow {
+    .arrows-wrap {
         position: absolute;
         bottom: 45px;
         right: 0;
         @media #{$small-and-down} {
-bottom: 0;
+            bottom: 0;
         }
 
-        .uk-slidenav{
+        .uk-slidenav {
             margin: 5px;
-            svg + svg{
+            svg + svg {
                 display: none;
             }
         }
