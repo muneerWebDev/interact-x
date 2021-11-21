@@ -1,37 +1,46 @@
 <footer class="siteFooter uk-padding-large uk-padding-remove-horizontal mouseSpecial">
-   <div class="uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom">
-    <div class="uk-container">
-        <div class="uk-grid">
-            <div class="uk-width-3-4@m">
-                <h2>Let’s Talk.</h2>
-                <a href="" class="uk-text-large uk-text-500">hey@interactx.uk</a>
+    <div class="uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom">
+        <div class="uk-container">
+            <div class="uk-grid  uk-grid-column-medium">
+                <div class="uk-width-1-2@s uk-width-1-4@m uk-text-center@s uk-flex-last@s">
+                    <a href="index.html" uk-scrollspy="cls: uk-animation-fade; delay: 300;" class="uk-logo uk-visible@m logo-desktop">
+                        <img width="" height="" alt="interactX" uk-img="data-src:img/footer-logo.svg" uk-svg>
+                    </a>
+                    <a href="index.html" uk-scrollspy="cls: uk-animation-fade; delay: 300;" class="uk-logo uk-hidden@m logo-mobile uk-display-inline-block uk-margin-bottom">
+                        <img width="" height="" alt="interactX" uk-img="data-src:img/footer-logo-mobile.svg" uk-svg>
+                    </a>
+                </div>
+                <div class="uk-width-1-2@s uk-width-3-4@m">
+                    <h2 uk-scrollspy="cls: uk-animation-fade; delay: 400;">Let’s Talk.</h2>
+                    <a href="mailto:hey@interactx.uk" class="uk-text-large uk-text-500"
+                        uk-scrollspy="cls: uk-animation-fade; delay: 500;">hey@interactx.uk</a>
+                </div>
             </div>
-            <div class="uk-width-1-4@m uk-text-center">
-                <a href="index.html" class="uk-logo">
-                    <img src="img/logo.png" class="logo" alt="Central Builders">
-                </a>
-            </div>
-        </div>
 
-        <div class="uk-grid uk-padding-large uk-padding-remove-horizontal uk-padding-remove-bottom uk-text-default">
-            
+            <div class="uk-grid uk-text-default uk-grid-column-medium">
 
-            <div class="uk-width-3-4@m">
-                Swansea Bay SA2 8PP <br>
-                Wales, United Kingdom
-            </div>
-            <div class="uk-width-1-4@m">
-                <ul class="social">
-                    <li><a href="">Linkedin</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Dribbble</a></li>
-                    <li><a href="">Behance</a></li>
-                </ul>
+
+                <div class="uk-width-1-2@s uk-width-3-4@m" uk-scrollspy="cls: uk-animation-fade; delay: 600;">
+                    Swansea Bay SA2 8PP <br>
+                    Wales, United Kingdom
+                </div>
+                <div class="uk-width-1-2@s uk-width-1-4@m">
+                    <ul class="social">
+                        <li><a href="https://www.linkedin.com/company/interact-x" target="_blank" uk-scrollspy="cls: uk-animation-fade; delay: 700;"><span
+                                    uk-icon="icon: linkedin"></span> Linkedin</a></li>
+                        <li><a href="https://medium.com/@interactx.uk" target="_blank" uk-scrollspy="cls: uk-animation-fade; delay: 800;"><span
+                                    uk-icon="icon: twitter"></span>Medium</a></li>
+                        <li><a href="https://www.instagram.com/interactx.uk/" target="_blank" uk-scrollspy="cls: uk-animation-fade; delay: 900;"><span
+                                    uk-icon="icon: instagram"></span>Instagram</a></li>
+                        <li><a href="https://dribbble.com/theinteractx" uk-scrollspy="cls: uk-animation-fade; delay: 1000;"><span
+                                    uk-icon="icon: dribble"></span>Dribbble</a></li>
+                        <li><a href="https://www.behance.net/interactx" target="_blank" uk-scrollspy="cls: uk-animation-fade; delay: 1100;"><span
+                                    uk-icon="icon: behance"></span>Behance</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-   </div>
 </footer>
 
 <section id="pageloader">
@@ -40,16 +49,11 @@
     </div>
 </section>
 
-<!--build:js js/core-scripts.min.js -->
+<!--build:js js/bundle.min.js -->
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
-
-<!-- endbuild -->
-<!--build:js js/vendor-scripts.min.js -->
 <script type="text/javascript" src="../node_modules/uikit/dist/js/uikit.min.js"></script>
 <script type="text/javascript" src="../node_modules/uikit/dist/js/uikit-icons.min.js"></script>
 <script type="text/javascript" src="../node_modules/packery/dist/packery.pkgd.min.js"></script>
-<!-- endbuild -->
-<!--build:js js/main.min.js -->
 <script type="text/javascript" src="js/main.js"></script>
 <!-- endbuild -->
 </body>
