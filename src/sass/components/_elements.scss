@@ -25,6 +25,13 @@
     box-shadow: 0 0 30px 10px #00000014;
 }
 
+@media (min-width: 1200px) and (max-width: 1335px) {
+    .uk-container {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
 html {
     // background-image: url(../img/grains.png);
     letter-spacing: 1px;
